@@ -1,6 +1,6 @@
 var heightElem = document.getElementById("height");
 var brickElem = document.getElementById("brick_symbol");
-document.getElementById("slider_num").innerHTML= ("&nbsp"+"&nbsp"+heightElem.value);
+
 
 
 //initially loads pyramid at default height and brick
@@ -20,6 +20,7 @@ function drawPyramid(height, brick_symbol) {
 
     // first, clear the old content
     document.getElementById("pyramid").innerHTML = "";
+    document.getElementById("slider_num").innerHTML=("&nbsp" + "&nbsp" + heightElem.value);
 
     // for each row....
     for (var row = 0; row < height; row++) {
